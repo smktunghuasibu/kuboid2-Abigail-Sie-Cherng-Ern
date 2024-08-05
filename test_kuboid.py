@@ -1,10 +1,10 @@
 #import workfile.kuboid as kuboid
 from workfile import kuboid
 import pytest
-
+#test for protected path
 def test_kuboid(monkeypatch, capsys):
-    # Define a function to simulate multiple user inputs
-    user_inputs = ["3.5", "4.2", "5.38"]
+    # Define a function to simulate multiple user inputs 
+    user_inputs = ["3.5", "4.2", "5.38"] 
 
     def mock_input(_):
         return user_inputs.pop(0)
